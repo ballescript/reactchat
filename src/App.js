@@ -38,6 +38,7 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
         <Router>
+          <Route path="/" component={Chatbox} />
         <Route path="/login" component={Login}/>
         <PrivateRoute component={Chatbox} status={this.state.status}/>
         </Router>  
